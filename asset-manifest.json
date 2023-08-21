@@ -1,15 +1,15 @@
 {
-  "main.css": "/tmsclone/static/css/main.1aaee619.chunk.css",
-  "main.js": "/tmsclone/static/js/main.5c5d3fb8.chunk.js",
-  "main.js.map": "/tmsclone/static/js/main.5c5d3fb8.chunk.js.map",
+  "main.css": "/tmsclone/static/css/main.fa482c1b.chunk.css",
+  "main.js": "/tmsclone/static/js/main.1c071c9d.chunk.js",
+  "main.js.map": "/tmsclone/static/js/main.1c071c9d.chunk.js.map",
   "static/js/1.444f0bc3.chunk.js": "/tmsclone/static/js/1.444f0bc3.chunk.js",
   "static/js/1.444f0bc3.chunk.js.map": "/tmsclone/static/js/1.444f0bc3.chunk.js.map",
   "static/js/2.364049ff.chunk.js": "/tmsclone/static/js/2.364049ff.chunk.js",
   "static/js/2.364049ff.chunk.js.map": "/tmsclone/static/js/2.364049ff.chunk.js.map",
   "runtime~main.js": "/tmsclone/static/js/runtime~main.192b9916.js",
   "runtime~main.js.map": "/tmsclone/static/js/runtime~main.192b9916.js.map",
-  "static/css/main.1aaee619.chunk.css.map": "/tmsclone/static/css/main.1aaee619.chunk.css.map",
+  "static/css/main.fa482c1b.chunk.css.map": "/tmsclone/static/css/main.fa482c1b.chunk.css.map",
   "index.html": "/tmsclone/index.html",
-  "precache-manifest.cd49d30ff9381d3d3319592646c05360.js": "/tmsclone/precache-manifest.cd49d30ff9381d3d3319592646c05360.js",
+  "precache-manifest.fafbc8eedd21e93014426b3c34e01306.js": "/tmsclone/precache-manifest.fafbc8eedd21e93014426b3c34e01306.js",
   "service-worker.js": "/tmsclone/service-worker.js"
 }
