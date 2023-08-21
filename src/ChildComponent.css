@@ -60,7 +60,7 @@ button{
     margin-right: 20px;
     margin-bottom: 10px;
 }
-@media (max-width: 480px){
+@media (max-width: 680px){
     .container {
         width: 100%;
         margin: 10px;
