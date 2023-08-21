@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "6f4a2bdb6b5d504802a7",
-    "url": "/tmsclone/static/css/main.fda176e1.chunk.css"
+    "revision": "1c071c9da93c3bcdd213",
+    "url": "/tmsclone/static/css/main.fa482c1b.chunk.css"
   },
   {
-    "revision": "6f4a2bdb6b5d504802a7",
-    "url": "/tmsclone/static/js/main.6f4a2bdb.chunk.js"
+    "revision": "1c071c9da93c3bcdd213",
+    "url": "/tmsclone/static/js/main.1c071c9d.chunk.js"
   },
   {
     "revision": "444f0bc38a785630c6eb",
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/tmsclone/static/js/runtime~main.192b9916.js"
   },
   {
-    "revision": "21f82e9a5c18d803adf71a2dc73437fa",
+    "revision": "b4d28ca9e2f98a82f0cdd622a14e4088",
     "url": "/tmsclone/index.html"
   }
 ];
