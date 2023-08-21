@@ -20,6 +20,7 @@ li {
 }
 input {
     height: 30px;   
+    padding-left: 8px;
 }
 .error {
     color: red;
@@ -56,4 +57,16 @@ button{
     border-radius: 2px;
     font-size: 12px;
     font-weight: 600;
+}
+@media only screen and (max-width: 480px){
+    .container {
+        width: 100%;
+        margin: 10px;
+    }
+    .details-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: stretch;
+    }
 }
