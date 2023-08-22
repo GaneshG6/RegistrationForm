@@ -4,13 +4,15 @@ import { createRoot } from "react-dom/client";
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import App from './App';
-import ParentComponent from './ParentComponent';
+import StopWatch from './StopWatch';
+import UseEffect from './Useeffect';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-   <ParentComponent/>
-  
+   <StopWatch/>
+  {/* <UseEffect /> */}
   </React.StrictMode>
 );
 
