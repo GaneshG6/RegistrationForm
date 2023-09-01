@@ -1,0 +1,9 @@
+.calculator-box {
+    margin-top: 100px;
+}
+.input-box {
+    background: linear-gradient(90deg,#7bd7d3,#1f7781 100%);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    
+}

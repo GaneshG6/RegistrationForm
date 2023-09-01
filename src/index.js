@@ -4,15 +4,13 @@ import { createRoot } from "react-dom/client";
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import App from './App';
-import StopWatch from './StopWatch';
-import UseEffect from './Useeffect';
+import CrudOperation from './CrudOperation';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-   <StopWatch/>
-  {/* <UseEffect /> */}
+  <CrudOperation />
   </React.StrictMode>
 );
 
