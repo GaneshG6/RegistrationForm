@@ -1,39 +1,37 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import Update from './Edit';
+import { API_URL } from '../API/url';
+import { useNavigate } from 'react-router';
 
 const Read = (props) => {
-    const [edit, setEdit] = useState(false);
     const [read, setRead] = useState([]);
-    const [editUser,setEditUser] = useState("")
+    const navigation = useNavigate()
 
-    const callApi = async ()=>{
-        let response = await axios.post("https://5ee2-103-118-189-15.ngrok-free.app/view")
+    const getApi = async ()=>{
+        let response = await axios.post(API_URL+"/view")
         setRead(response.data.data)
     }
 
     useEffect(() => {
-        callApi()
+        getApi()
     }, [])
 
     const handleEdit = (e, i) => {
-        // props.setList(false)
-        setEdit(true)
-       setEditUser(read[i])
+       navigation("/Edit", {state:read[i],
+    get: getApi})
     }
 
     const handleDelete = async (id)=>{
-        await axios.post("https://5ee2-103-118-189-15.ngrok-free.app/delete",{
+        await axios.post(API_URL+"/delete",{
             id
         })
-        let response = await axios.post("https://5ee2-103-118-189-15.ngrok-free.app/view")
-        setRead(response.data.data)
-
+       getApi()
     }
     return (
         <>
-           {
-           edit === false ? <div class="col-lg-7 mx-auto  list-data">
+           
+           <div class="col-lg-7 mx-auto  list-data">
            <div class="card border-0 shadow">
                <div class="card-body p-lg-5">
                    <div class="table-responsive">
@@ -62,7 +60,6 @@ const Read = (props) => {
                                                        <button class="btn btn-success btn-sm rounded-0" type="button"
                                                            data-toggle="tooltip" data-placement="top" title="Edit" onClick={(e) => {
                                                                handleEdit(e, index)
-                                                               console.log(index, 89);
                                                            }}>
                                                            <i class="fa fa-edit"></i>Edit</button>
                                                    </li>
@@ -81,10 +78,7 @@ const Read = (props) => {
                    </div>
                </div>
            </div>
-       </div> : <Update editUser={editUser}
-       setEdit={setEdit}
-       setRead={setRead}/>
-           } 
+       </div>
         </>
     )
 }

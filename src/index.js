@@ -5,6 +5,7 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import App from './App';
 import CrudOperation from './CrudOperation';
+import Router from './RouterLearn/Router';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

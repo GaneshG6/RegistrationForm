@@ -32,10 +32,10 @@ export default function validation(name,age,gmail,mobileNumber) {
 
    let lowerCaseMail = gmail.toLowerCase();
    let domain = ["gmail.com", "yahoo.com",];
-   let check1, domainLength;
+   let domainCheck, domainLength;
    for (let j = 0; j < domain.length; j++) {
        if (lowerCaseMail.indexOf(domain[j]) > 0) {
-           check1 = lowerCaseMail.indexOf(domain[j])
+        domainCheck = lowerCaseMail.indexOf(domain[j])
            domainLength = domain[j].length
        }
    }
@@ -50,8 +50,8 @@ export default function validation(name,age,gmail,mobileNumber) {
            }
        }
    }
-   if (atCheck !== -1 && check1 - atCheck === 1 && atCheck <
-       dotCheck && lowerCaseMail.length == atCheck + domainLength + 1 && dotCheck > 3 && specialCharCheck) {
+   if (atCheck !== -1 && domainCheck - atCheck === 1 && atCheck <
+       dotCheck && lowerCaseMail.length == atCheck + domainLength + 1 && atCheck > 3 && specialCharCheck) {
        error.gmail = ""
    }
    else {

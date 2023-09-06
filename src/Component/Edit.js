@@ -1,26 +1,31 @@
 import axios from "axios";
 import React,{useState} from "react";
 import validation from "./Validation";
+import { API_URL } from "../API/url";
+import { useLocation, useNavigate } from "react-router";
 
-export default function Update(params) {
-    const [id, SetId] = useState(params.editUser.id)
-const [name, setName] = useState(params.editUser.name);
-const [age, setAge] = useState(params.editUser.age);
-const [gmail, setGmail] = useState(params.editUser.gmail);
-const [mobileNumber, setMobile] = useState(params.editUser.mobileNumber);
-const [validate, setValidate] = useState("")
+export default function Update() {
+const location = useLocation()
+console.log(location);
+const [id, SetId] = useState(location.state.id)
+const [name, setName] = useState(location.state.name);
+const [age, setAge] = useState(location.state.age);
+const [gmail, setGmail] = useState(location.state.gmail);
+const [mobileNumber, setMobile] = useState(location.state.mobileNumber);
+const [validate, setValidate] = useState("");
+const navigate = useNavigate()
 
     const upload = async ()=>{
-        await axios.post("https://5ee2-103-118-189-15.ngrok-free.app/edit",{
+        await axios.post(API_URL+"/edit",{
             name,
             age,
             mobileNumber,
             gmail,
             id
         })
-        let response = await axios.post("https://5ee2-103-118-189-15.ngrok-free.app/view")
-        params.setRead(response.data.data)
-        params.setEdit(false)
+        let response = await axios.post(API_URL+"/view")
+        setValidate("")
+        navigate("/Read")
     }
 
     return (
@@ -70,7 +75,7 @@ const [validate, setValidate] = useState("")
     }
     else {
         upload()
-        setValidate("")
+       
     } 
   }}>Submit</button>
 </form>
